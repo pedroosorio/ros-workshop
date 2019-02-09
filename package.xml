@@ -9,6 +9,9 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 	<depend>roscpp</depend>
+	<build_depend>message_generation</build_depend>
+	<exec_depend>message_runtime</exec_depend>
+	
   <!--   <depend>roscpp</depend> -->
   <!--   Note that this is equivalent to the following: -->
   <!--   <build_depend>roscpp</build_depend> -->
