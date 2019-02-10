@@ -17,7 +17,7 @@ def sub_node():
 	node_name = node_name.replace("-", "_")
 	rospy.init_node(node_name, anonymous=False)
 	
-	rospy.logwarn("Creating publisher node with the following name: '%s'" % node_name)
+	rospy.logwarn("Creating subscriber node with the following name: '%s'" % node_name)
 	
 	# Create the subscriber
 	wssub = rospy.Subscriber("/workshop/chatter", testmsg, testmsg_callback)
