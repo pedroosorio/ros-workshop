@@ -19,7 +19,7 @@ int main(int argc, char **argv) {
 	ROS_INFO("Welcome to the ROS Workshop Publisher Node");
 	_wait_user_input();
 	
-	std::string node_name = "rosworkshop_";
+	std::string node_name = "cpppub_";
 	node_name += MathUtils::generateUUID();
 	
 	std::string def_message = "Default message";
@@ -58,7 +58,7 @@ int main(int argc, char **argv) {
 	ROS_ERROR("This message went into /rosout if you look there");
 	
 	while(ros::ok()){
-		std::this_thread::sleep_for(std::chrono::milliseconds(500));
+		std::this_thread::sleep_for(std::chrono::milliseconds(250));
 		msg.timestamp = unix_timestamp();
 		workshop_pub.publish(msg);
 	}
